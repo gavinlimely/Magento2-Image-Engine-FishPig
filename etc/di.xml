@@ -4,7 +4,7 @@
     
     <type name="FishPig\WordPress\Model\Url">
         <plugin name="Limely\ImageEngineFishPig\Plugin\WordPress\Model\Url"
-                type="Limely\ImageEngineFishPigPlugin\WordPress\Model\Url" />
+                type="Limely\ImageEngineFishPig\Plugin\WordPress\Model\Url" />
     </type>
     
 </config>
