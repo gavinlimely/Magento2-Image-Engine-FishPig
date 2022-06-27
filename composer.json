@@ -1,0 +1,24 @@
+{
+    "name": "limelyltd/module-image-engine-fishpig",
+    "description": "ImageEngine FishPig extension module for Magento2",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "gavin@limely.co.uk",
+            "name": "Limely"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "limelyltd/module-image-engine": "dev-master"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Limely\\ImageEngineFishPig\\": ""
+        }
+    }
+}
