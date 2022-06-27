@@ -1,10 +1,10 @@
 <?php
 
-namespace Limely\ImageEngineFishPig\Plugin\WordPress\Model;
+namespace Limely\ImageEngineFishPig\Plugin\WordPress\App;
 
 use Limely\ImageEngine\Helper\Data;
 use Magento\Store\Model\StoreManager;
-use FishPig\WordPress\Model\Url as BaseUrl;
+use FishPig\WordPress\App\Url as BaseUrl;
 
 class Url {
 
@@ -43,10 +43,10 @@ class Url {
      * @param string $return
      * @return string
      */
-    public function afterGetFileUploadUrl(BaseUrl $url, $return) {
+    public function afterGetUploadUrl(BaseUrl $url, $return) {
         if ($this->helper->isEnabled()) {
             $store = $this->storeManager->getStore();
-            if ($store && $this->isImage($return)) {
+            if ($store) {
                 $return = str_replace(rtrim($store->getBaseUrl(), '/'), $this->helper->getEngineUrl(), $return);
             }
         }
