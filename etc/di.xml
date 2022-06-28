@@ -7,4 +7,14 @@
                 type="Limely\ImageEngineFishPig\Plugin\WordPress\App\Url" />
     </type>
     
+    <type name="FishPig\WordPress\Model\Post">
+        <plugin name="Limely\ImageEngineFishPig\Plugin\WordPress\Model\Post"
+                type="Limely\ImageEngineFishPig\Plugin\WordPress\Model\Post" />
+    </type>
+    
+    <type name="FishPig\WordPress_PluginShortcodeWidget\App\View\RemoteHtmlProvider">
+        <plugin name="Limely\ImageEngineFishPig\Plugin\WordPress\App\View\RemoteHtmlProvider"
+                type="Limely\ImageEngineFishPig\Plugin\WordPress\App\View\RemoteHtmlProvider" />
+    </type>
+    
 </config>
